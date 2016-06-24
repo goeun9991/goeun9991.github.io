@@ -1,0 +1,215 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html, body {
+  height: 100%;
+  position: relative; }
+
+/* topAdd */
+#topAdd {
+  width: 60vw;
+  height: 3.5rem;
+  background-color: #999;
+  padding: 1rem 20vw;
+  position: relative; }
+
+.addbox > p {
+  width: 80%;
+  height: 1.5rem;
+  float: left;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 15px;
+  top: 1.2vw; }
+
+#topAdd > button {
+  width: 60px;
+  height: 60px;
+  float: right;
+  position: absolute;
+  top: 0.5vw;
+  right: 26vw;
+  background-image: url(../img/cancel.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: transparent; }
+
+#header {
+  width: 100%;
+  height: 4.5rem;
+  padding: 5px 0;
+  background-color: #ffb911;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  #header > #gnb {
+    width: 100%;
+    height: 100%;
+    margin: 0 10px 0 15px; }
+    #header > #gnb > ul {
+      width: 100%;
+      height: 100%; }
+      #header > #gnb > ul > .menu_1 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        margin: 25px auto;
+        background-image: url(../img/menu/menu_1.png);
+        background-repeat: no-repeat;
+        background-position: 50px 0; }
+      #header > #gnb > ul > .menu_2 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        margin: 25px auto;
+        background-image: url(../img/menu/menu_2.png);
+        background-repeat: no-repeat;
+        background-position: 50px 0; }
+      #header > #gnb > ul > .logo {
+        width: calc(100% / 5);
+        height: 150%;
+        float: left;
+        background-image: url(../img/menu/logo.png);
+        background-repeat: no-repeat;
+        background-position: 50px 0; }
+      #header > #gnb > ul > .menu_3 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        margin: 25px auto;
+        background-image: url(../img/menu/menu_3.png);
+        background-repeat: no-repeat;
+        background-position: 50px 0; }
+      #header > #gnb > ul > .menu_4 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        margin: 25px auto;
+        background-image: url(../img/menu/menu_4.png);
+        background-repeat: no-repeat;
+        background-position: 50px 0; }
+      #header > #gnb > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        transition: all 0.5s ease-in-out; }
+        #header > #gnb > ul > li > a:hover {
+          font-size: 1.3em; }
+
+#article {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/index.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+#gallery {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../img/gallery.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1000px; }
+
+.gallery_box {
+  width: 100%;
+  height: auto;
+  margin-top: 10px; }
+  .gallery_box > h4 {
+    width: 50%;
+    height: 58px;
+    background-image: url(../img/article/gallery_subtitle.png);
+    margin: 160px 0 0  350px;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+
+/* ----------------- gallery 이미지 ------------------*/
+.gallery_img_box {
+  width: 70%;
+  height: 400px;
+  margin-left: 220px;
+  margin-top: 100px;
+  overflow: hidden;
+  position: relative; }
+  .gallery_img_box > button {
+    width: 45px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0; }
+  .gallery_img_box > .btn_01 {
+    background-image: url("../img/article/gallery_arrleft.png");
+    background-repeat: no-repeat;
+    float: left;
+    cursor: pointer;
+    left: 0; }
+  .gallery_img_box > .btn_02 {
+    background-image: url("../img/article/gallery_arrright.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    right: 0; }
+  .gallery_img_box > ul {
+    width: 300%;
+    height: 100%;
+    margin-left: -100%; }
+    .gallery_img_box > ul > li {
+      width: calc(100% / 3);
+      height: 100%;
+      float: left;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .gallery_img_box > ul > .gallery_1 {
+      background-image: url("../img/article/gallery_1.png");
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .gallery_img_box > ul > .gallery_2 {
+      background-image: url("../img/article/gallery_2.png");
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .gallery_img_box > ul > .gallery_3 {
+      background-image: url("../img/article/gallery_3.png");
+      background-repeat: no-repeat;
+      background-size: 100%; }
+
+#contents {
+  width: 100%;
+  height: 110%;
+  background-image: url(../img/store_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+#section {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: url(../img/Untitled-2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative; }
+  #section #beer {
+    width: 50%;
+    height: 50%;
+    float: left;
+    margin-top: 200px;
+    margin-left: 800px; }
+
+#footer {
+  width: 100%;
+  height: 770px;
+  float: left;
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+#header.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+
+/*# sourceMappingURL=index.css.map */
