@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html, body {
+  height: 100%;
+  position: relative; }
+
+/* topAdd */
+#topAdd {
+  width: 60vw;
+  height: 3rem;
+  background-color: #999;
+  padding: 1rem 20vw;
+  position: relative; }
+
+.addbox > p {
+  width: 80%;
+  height: 1.5rem;
+  float: left;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 15px;
+  top: 1.2vw; }
+
+#topAdd > button {
+  width: 60px;
+  height: 60px;
+  float: right;
+  position: absolute;
+  top: 0.5vw;
+  right: 26vw;
+  background-image: url(../img/cancel.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: transparent; }
+
+#header {
+  width: 100%;
+  height: 5rem;
+  background-color: #ffb911;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+  transform-style: preserve-3d; }
+  #header > #gnb {
+    width: 100%;
+    height: 100%; }
+    #header > #gnb ul {
+      width: 100%;
+      height: 100%; }
+      #header > #gnb ul > li {
+        width: calc(100% / 5);
+        height: 100%;
+        position: relative; }
+        #header > #gnb ul > li.menu_1:hover .submenu {
+          display: block; }
+        #header > #gnb ul > li.menu_1 > ul {
+          width: 100%;
+          height: auto;
+          display: none; }
+          #header > #gnb ul > li.menu_1 > ul > li {
+            width: 100%;
+            height: 4rem; }
+            #header > #gnb ul > li.menu_1 > ul > li:hover {
+              background-color: #ffb911; }
+            #header > #gnb ul > li.menu_1 > ul > li > a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              line-height: 70px;
+              text-align: center;
+              font-weight: bold; }
+        #header > #gnb ul > li.menu_2:hover .submenu_2 {
+          display: block; }
+        #header > #gnb ul > li.menu_2 > ul {
+          width: 100%;
+          height: auto;
+          display: none; }
+          #header > #gnb ul > li.menu_2 > ul > li {
+            width: 100%;
+            height: 4rem; }
+            #header > #gnb ul > li.menu_2 > ul > li:hover {
+              background-color: #ffb911; }
+            #header > #gnb ul > li.menu_2 > ul > li > a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              line-height: 70px;
+              text-align: center;
+              font-weight: bold; }
+        #header > #gnb ul > li.menu_3:hover .submenu_3 {
+          display: block; }
+        #header > #gnb ul > li.menu_3 > ul {
+          width: 100%;
+          height: auto;
+          display: none; }
+          #header > #gnb ul > li.menu_3 > ul > li {
+            width: 100%;
+            height: 4rem; }
+            #header > #gnb ul > li.menu_3 > ul > li:hover {
+              background-color: #ffb911; }
+            #header > #gnb ul > li.menu_3 > ul > li > a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              line-height: 70px;
+              text-align: center;
+              font-weight: bold; }
+        #header > #gnb ul > li.menu_4:hover .submenu_4 {
+          display: block; }
+        #header > #gnb ul > li.menu_4 > ul {
+          width: 100%;
+          height: auto;
+          display: none; }
+          #header > #gnb ul > li.menu_4 > ul > li {
+            width: 100%;
+            height: 4rem; }
+            #header > #gnb ul > li.menu_4 > ul > li:hover {
+              background-color: #ffb911; }
+            #header > #gnb ul > li.menu_4 > ul > li > a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              line-height: 70px;
+              text-align: center;
+              font-weight: bold; }
+        #header > #gnb ul > li > a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          color: #333;
+          font-size: 2rem; }
+        #header > #gnb ul > li > ul {
+          background-color: #fff;
+          width: 100%;
+          height: auto; }
+          #header > #gnb ul > li > ul > li {
+            width: 100%;
+            height: 4rem; }
+            #header > #gnb ul > li > ul > li > a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              text-decoration: none; }
+    #header > #gnb > ul {
+      width: 100%;
+      height: 100%; }
+      #header > #gnb > ul > .menu_1 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        background-image: url(../img/menu/menu_1.png);
+        background-repeat: no-repeat;
+        background-position: 90px 30px; }
+      #header > #gnb > ul > .menu_2 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        background-image: url(../img/menu/menu_2.png);
+        background-repeat: no-repeat;
+        background-position: 90px 30px; }
+      #header > #gnb > ul > .logo {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        background-image: url(../img/menu/logo.png);
+        background-repeat: no-repeat;
+        background-position: 50px 0; }
+      #header > #gnb > ul > .menu_3 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        background-image: url(../img/menu/menu_3.png);
+        background-repeat: no-repeat;
+        background-position: 90px 30px; }
+      #header > #gnb > ul > .menu_4 {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        background-image: url(../img/menu/menu_4.png);
+        background-repeat: no-repeat;
+        background-position: 90px 30px; }
+      #header > #gnb > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        transition: all 0.5s ease-in-out; }
+        #header > #gnb > ul > li > a:hover {
+          font-size: 1.3em; }
+
+#banner {
+  width: 100%;
+  height: 970px;
+  background-image: url(../img/recipe/recipes_index.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden; }
+
+#article {
+  width: 100%;
+  height: 1800px;
+  overflow: hidden; }
+  #article #recipes_con {
+    width: 100%;
+    height: 1800px;
+    background-image: url(../img/recipe/recipes_bg.png); }
+    #article #recipes_con > .recipes_box {
+      width: 100%;
+      height: 580px;
+      float: left; }
+      #article #recipes_con > .recipes_box > h3 {
+        width: 100%;
+        height: 60%;
+        background-image: url(../img/recipe/recipes_title.png);
+        background-size: 100%;
+        background-repeat: no-repeat; }
+        #article #recipes_con > .recipes_box > h3 > .recipes_btn_1 {
+          width: 150px;
+          height: 55px;
+          margin: 250px 20px 40px 250px;
+          background-image: url("../img/recipe/recipe_all_btn_off.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          transition: all .5s;
+          background-color: transparent; }
+          #article #recipes_con > .recipes_box > h3 > .recipes_btn_1:hover {
+            background-image: url(../img/recipe/recipe_all_btn_on.png);
+            background-repeat: no-repeat;
+            background-position: center; }
+        #article #recipes_con > .recipes_box > h3 > .recipes_btn_2 {
+          width: 150px;
+          height: 55px;
+          margin-top: 250px;
+          margin-right: 20px;
+          background-image: url("../img/recipe/recipe_cock_btn_on.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          transition: all .5s;
+          background-color: transparent; }
+          #article #recipes_con > .recipes_box > h3 > .recipes_btn_2:hover {
+            background-image: url(../img/recipe/recipe_cock_btn_off.png);
+            background-repeat: no-repeat;
+            background-position: center; }
+        #article #recipes_con > .recipes_box > h3 > .recipes_btn_3 {
+          width: 150px;
+          height: 55px;
+          margin-top: 250px;
+          background-image: url("../img/recipe/recipe_taco_btn_on.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          transition: all .5s;
+          background-color: transparent; }
+          #article #recipes_con > .recipes_box > h3 > .recipes_btn_3:hover {
+            background-image: url(../img/recipe/recipe_taco_btn_off.png);
+            background-repeat: no-repeat;
+            background-position: center; }
+        #article #recipes_con > .recipes_box > h3 > .title_line {
+          width: 1070px;
+          height: 5px;
+          background-image: url(../img/recipe/recipe_line.png);
+          background-repeat: no-repeat;
+          margin-left: 240px; }
+      #article #recipes_con > .recipes_box > ul {
+        width: 1100px;
+        height: 400px;
+        float: left;
+        margin-left: 230px;
+        margin-top: 100px; }
+        #article #recipes_con > .recipes_box > ul > li {
+          width: 33%;
+          height: 100%;
+          float: left;
+          position: relative;
+          box-shadow: 2px 2px 12px #888;
+          overflow: hidden; }
+          #article #recipes_con > .recipes_box > ul > li > a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%; }
+        #article #recipes_con > .recipes_box > ul > .recipes_1 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_1 > a {
+            background-image: url(../img/recipe/recipe_img1.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_1 > a:hover .recipespop_1 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_1 > a > .recipespop_1 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img1_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -128px;
+              transition: all .5s ease-in; }
+        #article #recipes_con > .recipes_box > ul > .recipes_2 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_2 > a {
+            background-image: url(../img/recipe/recipe_img2.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_2 > a:hover .recipespop_2 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_2 > a > .recipespop_2 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img2_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -140px;
+              transition: all .5s ease-in; }
+        #article #recipes_con > .recipes_box > ul > .recipes_3 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_3 > a {
+            background-image: url(../img/recipe/recipe_img3.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_3 > a:hover .recipespop_3 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_3 > a > .recipespop_3 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img3_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -140px;
+              transition: all .5s ease-in; }
+        #article #recipes_con > .recipes_box > ul > .recipes_4 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_4 > a {
+            background-image: url(../img/recipe/recipe_img4.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_4 > a:hover .recipespop_4 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_4 > a > .recipespop_4 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img4_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -140px;
+              transition: all .5s ease-in; }
+        #article #recipes_con > .recipes_box > ul > .recipes_5 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_5 > a {
+            background-image: url(../img/recipe/recipe_img5.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_5 > a:hover .recipespop_5 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_5 > a > .recipespop_5 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img5_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -140px;
+              transition: all .5s ease-in; }
+        #article #recipes_con > .recipes_box > ul > .recipes_6 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_6 > a {
+            background-image: url(../img/recipe/recipe_img6.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_6 > a:hover .recipespop_6 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_6 > a > .recipespop_6 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img6_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -140px;
+              transition: all .5s ease-in; }
+        #article #recipes_con > .recipes_box > ul > .recipes_7 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_7 > a {
+            background-image: url(../img/recipe/recipe_img7.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_7 > a:hover .recipespop_7 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_7 > a > .recipespop_7 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img7_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -140px;
+              transition: all .5s ease-in; }
+        #article #recipes_con > .recipes_box > ul > .recipes_8 {
+          margin-left: 0; }
+          #article #recipes_con > .recipes_box > ul > .recipes_8 > a {
+            background-image: url(../img/recipe/recipe_img8.png); }
+            #article #recipes_con > .recipes_box > ul > .recipes_8 > a:hover .recipespop_8 {
+              width: 100%;
+              height: 152px;
+              bottom: 0; }
+            #article #recipes_con > .recipes_box > ul > .recipes_8 > a > .recipespop_8 {
+              width: 100%;
+              height: 152px;
+              background-image: url(../img/recipe/recipe_img8_pop.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              position: absolute;
+              bottom: -140px;
+              transition: all .5s ease-in; }
+  #article .more_btn {
+    width: 810px;
+    height: 74px;
+    margin-top: -400px;
+    margin-left: 400px;
+    background-image: url(../img/recipe/recipe_pluse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all .5s;
+    background-size: 100%;
+    background-color: transparent; }
+    #article .more_btn:hover {
+      background-image: url(../img/recipe/recipe_pluse_hover.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+
+#section {
+  overflow: hidden; }
+
+#footer {
+  width: 100%;
+  height: 780px;
+  float: left;
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 780px;
+  overflow: hidden; }
+
+#header.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+
+/*# sourceMappingURL=sub_recipe.css.map */
