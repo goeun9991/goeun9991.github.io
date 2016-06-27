@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/beer.css" />
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+   <script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script> 
+	<script src="./js/scrollFix.js"></script>
+	<script src="./js/top_btn.js"></script>
+	<script src="./js/topAdd.js"></script>
+	<title>index</title>
+	<style>
+
+	body{height: 1000px;}	
+
+	</style>
+	 <script>
+             $(function(){
+              top_btn();
+              topAdd($('#topAdd'));
+      'use strict';
+
+             
+            var b_box =$('.gallery_img_box'),
+            b_box_ul = b_box.find('ul'),
+            b_box_li = b_box.find('li'),
+            b_box_li_width = b_box.find('li').width(),
+            l_btn = $('.btn_01'),
+            r_btn = $('.btn_02');
+            b_box_li.last().prependTo(b_box_ul);
+
+            l_btn.on('click',function(){ 
+            var b_li= b_box.find('li');
+             b_li.first().stop().animate({'margin-left' : b_box_li_width },700,function(){
+                b_li.css({'margin-left':0});
+                b_li.last().prependTo(b_box_ul);
+                });
+             });  
+            r_btn.on('click',function(){
+            var b_li= b_box.find('li')
+             .first().stop().animate({'margin-left' : -b_box_li_width },700,function(){
+                b_li.css({'margin-left':0}).
+                first().appendTo(b_box_ul);
+                });
+            }); 
+             
+            // 자동움직임
+          // var timer;
+          // 일정한 시간간격을 두고 움직이는기능 : setInterval
+          function startBtn(){ settingTime = setInterval('$(".btn_02").click()', 3000) };
+          //setInterval 취소시키는 기능: clearInterval
+          function stopBtn(){	clearInterval( settingTime )};
+          startBtn();
+          $('.gallery_img_box').on({mouseenter:stopBtn ,mouseleave:startBtn});
+
+    });
+      
+      
+
+         </script>
+	
+</head>
+<body>
+   <div id="topAdd">
+ <div class="addbox">
+           <p>본 페이지는 영리를 목적으로 하지 않고, 개인 포트폴리오 제작을 위한 학습사이트 입니다.</p>
+        
+    </div>
+    <button type="button" aria-label="팝업닫기"></button>
+  </div>
+	<div id="header">	
+			<nav id="gnb">
+				<ul role="menubar">
+					<li role="menuitem" class="menu_1"><a href="./sub_history.html"></a>
+					  <ul class="submenu">
+					    <li><a href="./sub_history.html#section">코로나 이야기</a></li>
+					    <li><a href="./sub_history.html#content">코로나 역사</a></li>
+					  </ul>
+					</li>
+					<li role="menuitem" class="menu_2"><a href="./sub_store.html"></a>
+				      <ul class="submenu_2">
+					    <li><a href="./sub_store.html#article">제품 소개</a></li>
+					    <li><a href="./sub_store.html#section">#corona</a></li>
+					  </ul>
+					</li>
+					<li role="menuitem" class="logo"><a href="./index.html"></a></li>
+					<li role="menuitem" class="menu_3"><a href="./sub_recipe.html"></a>
+				      <ul class="submenu_3">
+					    <li><a href="./sub_recipe.html#article">레시피</a></li>
+					  </ul>
+					</li>
+					<li role="menuitem" class="menu_4"><a href="./sub_event.html"></a>
+				      <ul class="submenu_4">
+					    <li><a href="./sub_event.html#article">코로나 파티</a></li>
+					    <li><a href="./sub_event.html#section">일정소개</a></li>
+					    <li><a href="./sub_event.html#content">Event</a></li>
+					  </ul>
+					</li>
+				</ul>
+			</nav>
+	</div>
+	<div id="article"><span class="me_hidden">article</span></div>
+          <div id="gallery">
+          <h3 class="gallery_title item"><span class="me_hidden">타이틀영역</span></h3>
+          <div class="gallery_box item2">
+          <h4><span class="me_hidden">서브타이틀영역</span></h4>
+              <div class="gallery_img_box">
+                      <button class="btn_01"><span class="me_hidden">left_btn</span></button>
+                      <button class="btn_02"><span class="me_hidden">right_btn</span></button>
+                  <ul>
+                      <li class="gallery_1"><span class="me_hidden">gallery_1</span></li>
+                      <li class="gallery_2"><span class="me_hidden">gallery_2</span></li>
+                      <li class="gallery_3"><span class="me_hidden">gallery_3</span></li>
+                  </ul>
+              </div><!--//.bestreview_box-->
+            </div>
+    </div><!-- gallery -->
+    <div id="contents">
+                <div id="sub_head">
+         <h3>서브메뉴영역</h3>
+         <div id="shopping_maintitle"><span class="me_hidden">쇼핑_영역</span></div>
+     </div>
+            <div id="shopping">
+          <h3 class="shopping_title item"><span class="me_hidden">쇼핑 타이틀영역</span></h3>
+          <h4>
+                 <span class="me_hidden">쇼핑 동영상영역</span>
+             </h4>
+          <div class="shopping_sub_box">
+              <iframe src="https://player.vimeo.com/video/169484564" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              
+          </div>
+      </div><!--//#shopping-->
+    </div>    
+      <div id="section">
+    <div id="beer">   
+<div class="click">
+ 
+  </div>
+
+  <div class="glass">
+   
+  <div class="bear"></div>
+   
+  </div>
+
+  <div class="glass3"></div>
+
+   <div class="asa"></div>
+ 
+<div class="cerv"></div> 
+ <div class="bubles"><span class="b3"></span></div>
+      </div><!--beer-->
+      </div>
+    
+	<div id="footer">footer</div>
+
+</body>
+</html>

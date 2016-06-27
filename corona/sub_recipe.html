@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="./css/sub_recipe.css" />
+    <link rel="stylesheet" href="./css/lib/normalize.css" />
+    <link rel="stylesheet" href="./css/sub_recipe.css" />
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script> 
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+	<script src="./js/scrollFix.js"></script>
+	<script src="./js/top_btn.js"></script>
+	<script src="./js/topAdd.js"></script>
+	<title>sub_recipe</title>
+	<script>
+	           $(function(){
+              top_btn();
+              topAdd($('#topAdd'));
+      'use strict';
+                 
+        /*----------------더보기---------------------------*/
+           
+        var event_morebtn = $('.more_btn'),
+            event_li7= $('.recipes_box').find('.recipes_7'),
+            event_li8= $('.recipes_box').find('.recipes_8');
+            event_li7.hide();
+            event_li8.hide();
+            event_morebtn.on('click',function(){
+                $('.recipes_box').animate({'height':'580px'});
+                event_li7.fadeIn(1500);
+                event_li8.fadeIn(1500);
+                event_morebtn.fadeOut(500);
+            });
+                
+        
+});
+	</script>
+</head>
+<body>
+   <div id="topAdd">
+ <div class="addbox">
+           <p>본 페이지는 영리를 목적으로 하지 않고, 개인 포트폴리오 제작을 위한 학습사이트 입니다.</p>
+        
+    </div>
+    <button type="button" aria-label="팝업닫기"></button>
+  </div>
+	<div id="header">
+			<nav id="gnb">
+				<ul role="menubar"><a href=""></a>
+					<li role="menuitem" class="menu_1"><a href="./sub_history.html"></a>
+					  <ul class="submenu">
+					    <li><a href="./sub_history.html#section">코로나 이야기</a></li>
+					    <li><a href="./sub_history.html#content">코로나 역사</a></li>
+					  </ul>
+					</li>
+					<li role="menuitem" class="menu_2"><a href="./sub_store.html"></a>
+				      <ul class="submenu_2">
+					    <li><a href="./sub_store.html#article">제품 소개</a></li>
+					    <li><a href="./sub_store.html#section">#corona</a></li>
+					  </ul>
+					</li>
+					<li role="menuitem" class="logo"><a href="./index.html"></a></li>
+					<li role="menuitem" class="menu_3"><a href="#banner"></a>
+				      <ul class="submenu_3">
+					    <li><a href="#article">레시피</a></li>
+					  </ul>
+					</li>
+					<li role="menuitem" class="menu_4"><a href="./sub_event.html"></a>
+				      <ul class="submenu_4">
+					    <li><a href="./sub_event.html#article">Corona Party</a></li>
+					    <li><a href="./sub_event.html#section">Corona Finder</a></li>
+					    <li><a href="./sub_event.html#content">Event</a></li>
+					  </ul>
+					</li>
+				</ul>
+			</nav>
+	</div> <!-- #header -->
+	<div id="banner"><span class="me_hidden">레시피 배너</span></div> <!-- #banner -->
+    <div id="article"><span class="me_hidden">칵테일</span>
+          <div id="recipes_con">
+          <div class="recipes_box">
+              <h3 class="recipes_1_title"><span class="me_hidden">상품타이틀</span>
+            <button type="button" class="recipes_btn_1"><span class="me_hidden">레시피 선택 버튼</span></button> 
+            <button type="button" class="recipes_btn_2"><span class="me_hidden">레시피 선택 버튼</span></button> 
+            <button type="button" class="recipes_btn_3"><span class="me_hidden">레시피 선택 버튼</span></button> 
+            <div class="title_line"></div>
+             </h3>
+              <ul class="me_link">
+                  <li class="recipes_1"><a href="#"><span>recipes_1</span>
+                  <span class="recipespop_1"><!--이미지삽입-->
+                    </span></a></li>
+                    
+                    <li class="recipes_2"><a href="#"><span>recipes_2</span>
+                    <span class="recipespop_2"><!--이미지삽입--></span></a></li>
+                    
+                    <li class="recipes_3"><a href="#"><span>recipes_3</span>
+                    <span class="recipespop_3"><!--이미지삽입-->
+                    </span></a></li>
+                    
+                    <li class="recipes_4"><a href="#"><span>recipes_4</span>
+                    <span class="recipespop_4"><!--이미지삽입-->
+                    </span></a></li>
+                    
+                    <li class="recipes_5"><a href="#"><span>recipes_5</span>
+                    <span class="recipespop_5"><!--이미지삽입-->
+                    </span></a></li>
+                    
+                    <li class="recipes_6"><a href="#"><span>recipes_6</span>
+                    <span class="recipespop_6"><!--이미지삽입-->
+                    </span></a></li>
+                    
+                    <li class="recipes_7"><a href="#"><span>recipes_7</span>
+                    <span class="recipespop_7"><!--이미지삽입-->
+                    </span></a></li>
+                    
+                    <li class="recipes_8"><a href="#"><span>recipes_8</span>
+                    <span class="recipespop_8"><!--이미지삽입-->
+                    </span></a></li>
+                    </ul></div>
+         </div><!--product_con--> 
+                    
+                                                      
+      <button type="button" class="more_btn"><span class="me_hidden">더보기버튼</span></button> 
+          
+                    
+    </div> <!-- #article -->
+	<div id="section"><span class="me_hidden">??</span></div> <!-- #section -->
+	<div id="footer"></div> <!-- #footer -->
+</body>
+</html>
